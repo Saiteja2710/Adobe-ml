@@ -10,18 +10,18 @@ This project focuses on the regularization of curves, symmetry detection, and cu
 ## Repository Structure
 
 
-├── requirements_streamlit.py
+├── Regularization_streamlit.py
 
-├── symetry_streamlit.py
+├── Regularization.py
 
-├── other_script1.py
+├── Symmetry_streamlit.py
 
-├── other_script2.py
+├── Symmetry.py
 
 └── README.md
 
 
-### 1. requirements_streamlit.py
+### 1. regularization_streamlit.py
 - *Platform*: Streamlit
 - *Description*: This script sets up the environment and dependencies required to run the Streamlit-based applications in the project.
 - *Usage*: 
@@ -39,7 +39,7 @@ This project focuses on the regularization of curves, symmetry detection, and cu
   
 - *Purpose*: Provides an interactive interface to upload curve data, visualize it, and analyze symmetry properties.
 
-### 3. other_script1.py
+### 3. Regularization.py
 - *Platform*: Other Platform
 - *Description*: This script handles a specific aspect of the project (e.g., regularization or curve completion). It is designed to be run independently of the Streamlit applications.
 - *Usage*: 
@@ -48,7 +48,7 @@ This project focuses on the regularization of curves, symmetry detection, and cu
   
 - *Purpose*: Focuses on a particular computational task related to curve analysis outside the Streamlit environment.
 
-### 4. other_script2.py
+### 4. symmetry.py
 - *Platform*: Other Platform
 - *Description*: Similar to other_script1.py, this script is dedicated to another distinct task within the project.
 - *Usage*: 
