@@ -1,6 +1,5 @@
 import numpy as np
 import cv2
-import streamlit as st
 from PIL import Image
 
 def detect_symmetry(image):
@@ -59,31 +58,19 @@ def detect_symmetry(image):
             y1 = int(-d * b - 1000 * a)
             cv2.line(image, (x0, y0), (x1, y1), (0, 255, 255), 2)
     
-    # Convert BGR back to RGB (for display in Streamlit)
+    # Convert BGR back to RGB for saving or further processing
     image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
     return image
 
-# Streamlit UI
-st.title('Symmetry Detector')
+# Example usage
+image_path = "path_to_your_image.png"  # Replace with your image path
+image = Image.open(image_path)
+image = np.array(image)
 
-# Handle image upload
-uploaded_image = st.file_uploader("Choose an image file (png, jpg)", type=["png", "jpg", "jpeg"])
+processed_image = detect_symmetry(image)
 
-if uploaded_image is not None:
-    try:
-        image = Image.open(uploaded_image)
-        image = np.array(image)
-
-        processed_image = detect_symmetry(image)
-
-        if processed_image is not None:
-            processed_image = Image.fromarray(processed_image)
-            # Resize the image
-            resized_image = processed_image.resize((processed_image.width // 2, processed_image.height // 2))
-            st.image(resized_image, caption='Processed Image with Symmetry Detection', use_column_width=True)
-        else:
-            st.error("Symmetry could not be detected. Please try another image.")
-    except Exception as e:
-        st.error(f"An error occurred: {e}")
+if processed_image is not None:
+    processed_image = Image.fromarray(processed_image)
+    processed_image.save("processed_image.png")
 else:
-    st.info("Please upload an image file to proceed.")
+    print("Symmetry could not be detected. Please try another image.")
