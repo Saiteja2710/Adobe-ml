@@ -1,3 +1,7 @@
+Here's a sample README.md file for your project:
+
+---
+
 # Project Title: Regularization, Symmetry Detection, and Curve Completion
 
 ## Project Overview
@@ -6,14 +10,18 @@ This project focuses on the regularization of curves, symmetry detection, and cu
 ## Repository Structure
 
 
-├── Reqularization_streamlit.py
-├── Symmetry_streamlit.py
-├── Regularization.py
-├── Symmetry.py
+├── requirements_streamlit.py
+
+├── symetry_streamlit.py
+
+├── other_script1.py
+
+├── other_script2.py
+
 └── README.md
 
 
-### 1. Reqularization_streamlit.py
+### 1. requirements_streamlit.py
 - *Platform*: Streamlit
 - *Description*: This script sets up the environment and dependencies required to run the Streamlit-based applications in the project.
 - *Usage*: 
@@ -22,7 +30,7 @@ This project focuses on the regularization of curves, symmetry detection, and cu
   
 - *Purpose*: Installs necessary packages and initializes the environment for Streamlit-based applications.
 
-### 2. Symmetry_streamlit.py
+### 2. symetry_streamlit.py
 - *Platform*: Streamlit
 - *Description*: This script is responsible for detecting symmetry in curves using a user-friendly Streamlit interface.
 - *Usage*: 
@@ -31,7 +39,7 @@ This project focuses on the regularization of curves, symmetry detection, and cu
   
 - *Purpose*: Provides an interactive interface to upload curve data, visualize it, and analyze symmetry properties.
 
-### 3. Reqularization.py
+### 3. other_script1.py
 - *Platform*: Other Platform
 - *Description*: This script handles a specific aspect of the project (e.g., regularization or curve completion). It is designed to be run independently of the Streamlit applications.
 - *Usage*: 
@@ -40,7 +48,7 @@ This project focuses on the regularization of curves, symmetry detection, and cu
   
 - *Purpose*: Focuses on a particular computational task related to curve analysis outside the Streamlit environment.
 
-### 4. Symmetry.py
+### 4. other_script2.py
 - *Platform*: Other Platform
 - *Description*: Similar to other_script1.py, this script is dedicated to another distinct task within the project.
 - *Usage*: 
@@ -71,7 +79,7 @@ This project focuses on the regularization of curves, symmetry detection, and cu
 
 - *For Streamlit Scripts:*
   Use the Streamlit command followed by the script name (as shown in the usage section of each Streamlit script).
-
+  
 - *For Other Scripts:*
   Run the Python script directly using the python command.
 
@@ -83,4 +91,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
-This README.md provides a clear overview of your project, instructions on how to install dependencies, and how to run each of the scripts individually on their respective platforms.
+This README.md provides a clear overview of your project, instructions on how to install dependencies, and how to run each of the scripts individually on their respective platforms.\
